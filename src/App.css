@@ -1,0 +1,175 @@
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif, monospace;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.header {
+  background-color: #f3f3f3;
+  color: #000;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header--fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.header--transparent {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__brand h1 {
+  font-size: 20px;
+}
+
+.header__brand h1 a {
+  color: #999;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav_lang {
+  position: relative;
+}
+
+.header__nav_lang .selected {
+  width: 50px;
+  background-color: #f3f3f3;
+  color: gold;
+  padding: 5px;
+  font-weight: 700;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.header__nav_lang .selected .dropdown {
+  position: absolute;
+  top: calc(100%+5px);
+  left: 0;
+  width: 100%;
+  background-color: #999;
+  padding: 5px 0;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.header__nav_lang .selected .dropdown li {
+  text-align: center;
+  font-size: 12px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.intro {
+  height: 100%;
+  background-color: tomato;
+}
+.intro__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.intro__body {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  color: #999;
+  padding: 70px 0;
+}
+
+.intro__body h1 {
+  margin-bottom: 30px;
+}
+
+.intro__body p {
+  max-width: 600px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.about {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about h1 {
+  margin-bottom: 40px;
+}
+
+.about img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page-404 {
+  height: 100%;
+}
+
+.page-404 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: inherit;
+}
+
+.page-404 p a {
+  color: #000;
+}
